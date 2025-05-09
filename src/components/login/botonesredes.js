@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
     },
     boton: {
         padding: 15,
-        borderRadius: 5,
+        borderRadius: 10, // más suave
         alignItems: 'center',
     },
     textoBoton: {

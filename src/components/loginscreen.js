@@ -11,13 +11,16 @@ const LoginScreen = () => {
     return (
         <View style={styles.contenedor}>
             <StatusBar style="light" backgroundColor="#007BFF" />
-            <View style={styles.barra} />
-            <Text style={styles.tituloApp}>Login App Berenstein y Klawir</Text>
-            <Encabezado />
-            <Formulario />
-            <BotonesPrincipales />
-            <Divisor />
-            <BotonesRedes />
+            <View style={styles.superior}>
+                <Text style={styles.tituloApp}>Login App Berenstein y Klawir</Text>
+            </View>
+            <View style={styles.cuerpo}>
+                <Encabezado />
+                <Formulario />
+                <BotonesPrincipales />
+                <Divisor />
+                <BotonesRedes />
+            </View>
         </View>
     );
 };
@@ -26,17 +29,22 @@ const styles = StyleSheet.create({
     contenedor: {
         flex: 1,
         backgroundColor: '#fff',
-        padding: 30,
+        justifyContent: 'center',
     },
-    barra: {
-        height: 30,
+    superior: {
         backgroundColor: '#007BFF',
-    },
+        paddingVertical: 25,
+        alignItems: 'center',
+        marginTop: -205,
+      },
     tituloApp: {
-        textAlign: 'center',
+        color: 'white',
         fontWeight: 'bold',
-        fontSize: 16,
-        marginBottom: 10,
+        fontSize: 20,
+    },
+    cuerpo: {
+        paddingHorizontal: 30,
+        marginTop: 20,
     },
 });
 

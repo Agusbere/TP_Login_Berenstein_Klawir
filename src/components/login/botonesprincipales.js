@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
     boton: {
         backgroundColor: '#007BFF',
         padding: 15,
-        borderRadius: 5,
+        borderRadius: 10, 
         alignItems: 'center',
     },
     textoBoton: {
@@ -26,5 +26,6 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
     },
 });
+
 
 export default BotonesPrincipales;
